@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: '#050505',
+        surface: '#0C1328',
+        elevated: '#101828',
+        card: '#141B2C',
+        border: 'rgb(255 255 255)',
+        foreground: '#E8EFFA',
+        muted: '#94A3B8',
+        primary: '#00F0FF',
+        accent: '#5DD0FF',
+        secondary: '#9B75FF',
+        success: '#4ADE80',
+        warning: '#FBBF24',
+        error: '#FB7185',
+        info: '#38BDF8',
+        glass: 'rgb(8 10 18)',
+        cyanBright: '#00F0FF',
+        blueAccent: '#5DD0FF',
+        silverBright: '#F8FAFC',
+        textPrimary: '#E8EFFA',
+        textSecondary: '#94A3B8',
+        textMuted: '#6C7B94',
+        bgBase: '#050505',
+        bgSurface: '#0C1328',
+        bgElevated: '#101828',
+        glassBorder: 'rgba(56, 189, 248, 0.16)',
+        'glass-border': 'rgba(56, 189, 248, 0.16)',
+        'bg-surface': '#0C1328',
+        'bg-elevated': '#101828',
+        'text-secondary': '#94A3B8',
+        'text-muted': '#6C7B94',
+      },
+      boxShadow: {
+        soft: '0 20px 60px rgba(0,0,0,0.35)',
+        glow: '0 0 36px rgba(56,189,248,0.14)',
+        panel: '0 35px 90px rgba(0,0,0,0.35)',
+        card: '0 24px 58px rgba(0,0,0,0.28), 0 0 32px rgba(56,189,248,0.08)',
+        outline: '0 0 0 1px rgba(255,255,255,0.04)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '2.5rem',
+      },
+      backgroundImage: {
+        'radial-cool': 'radial-gradient(circle, rgba(0,240,255,0.18), transparent 35%)',
+        'hero-glow': 'radial-gradient(circle at top right, rgba(56,189,248,0.16), transparent 25%)',
+        'hero-glow-soft': 'radial-gradient(circle at top right, rgba(0,240,255,0.08), transparent 35%)',
+        'surface-glow': 'linear-gradient(180deg, rgba(0,0,0,0.12), transparent)',
+        'card-glow': 'radial-gradient(circle at top left, rgba(0,240,255,0.18), transparent 42%), radial-gradient(circle at bottom right, rgba(155,117,255,0.12), transparent 30%)',
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+        'glow-pulse': 'glowPulse 3.2s ease-in-out infinite',
+        'pulse-ring': 'pulseRing 2s ease-in-out infinite',
+        'spin-slow': 'spin 14s linear infinite',
+      },
+      keyframes: {
+        pulseRing: {
+          '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(1.4)', opacity: '0.5' },
+        },
+        glowPulse: {
+          '0%, 100%': { opacity: '0.75' },
+          '50%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
