@@ -2,16 +2,16 @@ import type { PortfolioData } from '@/types';
 
 export const portfolioData: PortfolioData = {
   personal: {
-    name: 'Hemanth B.',
+    name: 'Hemanth.B',
     initials: 'HB',
     title: 'AI & Data Science Student | Data Analytics Intern | Aspiring AI Engineer',
     tagline:
       'Learning, building, and growing through real-world experience and continuous improvement.',
-    bio: "I'm Hemanth B., a B.Tech student in Artificial Intelligence & Data Science at Gojan School of Business and Technology (Anna University). I'm passionate about Artificial Intelligence, Data Science, and Software Development. Currently, I'm learning C++, Python, Data Structures & Algorithms, SQL, and Machine Learning while gaining practical industry experience through internships. I'm committed to continuously improving my technical skills and building projects that solve real-world problems.",
+    bio: "I'm Hemanth.B, a B.Tech student in Artificial Intelligence & Data Science at Gojan School of Business and Technology (Anna University). I'm passionate about Artificial Intelligence, Data Science, and Software Development. Currently, I'm learning C++, Python, Data Structures & Algorithms, SQL, and Machine Learning while gaining practical industry experience through internships. I'm committed to continuously improving my technical skills and building projects that solve real-world problems.",
     careerObjective:
       'To build a successful career in Artificial Intelligence and Data Science by continuously learning emerging technologies, solving real-world problems, and developing innovative software solutions that create meaningful impact.',
     motto: 'Learning consistently, building confidently, and growing through every challenge.',
-    location: 'Tiruvallur, Tamil Nadu, India',
+    location: 'Chennai, Tamil Nadu, India',
     availabilityBadge: 'Open to internships & collaborations',
     resumeUrl: '/resume.pdf',
     typewriterPhrases: [
@@ -41,7 +41,7 @@ export const portfolioData: PortfolioData = {
   aboutStats: [
     { icon: 'graduation', label: 'Status', value: 'B.Tech Student' },
     { icon: 'briefcase', label: 'Focus', value: 'AI & Data Science' },
-    { icon: 'map-pin', label: 'Location', value: 'Tiruvallur, TN' },
+    { icon: 'map-pin', label: 'Location', value: 'Chennai, TN' },
   ],
 
   navLinks: [
@@ -304,7 +304,7 @@ export const portfolioData: PortfolioData = {
   contact: {
     email: 'hemanth2k6@gmail.com',
     phone: '+91 8072933431',
-    location: 'Tiruvallur, Tamil Nadu, India',
+    location: 'Chennai, Tamil Nadu, India',
     availability: 'Open to internships & collaborations',
   },
 };

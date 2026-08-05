@@ -53,7 +53,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,240,255,0.35)]">
             Hemanth
           </span>{' '}
-          B.
+          B
         </motion.h1>
 
         {/* Subtitle */}
