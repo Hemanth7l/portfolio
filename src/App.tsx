@@ -1,7 +1,7 @@
-import { useState, lazy, Suspense } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { lazy, Suspense } from 'react';
+// import { AnimatePresence } from 'framer-motion';
 
-import Preloader from '@/components/ui/Preloader';
+// import Preloader from '@/components/ui/Preloader';
 import Navbar from '@/components/ui/Navbar';
 import CursorGlow from '@/components/ui/CursorGlow';
 import ProgressBar from '@/components/ui/ProgressBar';
@@ -32,49 +32,41 @@ import { useLenis } from '@/hooks/useLenis';
 import { useScrollAnimations } from '@/hooks/useScrollAnimations';
 
 export default function App() {
-  const [loaded, setLoaded] = useState(false);
-
   useLenis();
   useScrollAnimations();
 
   return (
     <>
-      <AnimatePresence>
-        {!loaded && <Preloader onComplete={() => setLoaded(true)} />}
-      </AnimatePresence>
+      <NeuralCanvas />
 
-      {loaded && (
-        <>
-          <NeuralCanvas />
-          <Suspense fallback={null}>
-            <Scene3D />
-          </Suspense>
-          <CyberGrid />
-          <LaserScanner />
-          <CursorGlow />
-          <ProgressBar />
-          <Navbar />
+      <Suspense fallback={null}>
+        <Scene3D />
+      </Suspense>
 
-          <main className="relative z-10">
-            <Hero />
-            <CurrentStatus />
-            <About />
-            <Skills />
-            <SoftSkills />
-            <Projects />
-            <Experience />
-            <Education />
-            <Certifications />
-            <TechStack />
-            <Achievements />
-            <LearningJourney />
-            <ResumeCTA />
-            <Contact />
-          </main>
+      <CyberGrid />
+      <LaserScanner />
+      <CursorGlow />
+      <ProgressBar />
+      <Navbar />
 
-          <Footer />
-        </>
-      )}
+      <main className="relative z-10">
+        <Hero />
+        <CurrentStatus />
+        <About />
+        <Skills />
+        <SoftSkills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Certifications />
+        <TechStack />
+        <Achievements />
+        <LearningJourney />
+        <ResumeCTA />
+        <Contact />
+      </main>
+
+      <Footer />
     </>
   );
 }
