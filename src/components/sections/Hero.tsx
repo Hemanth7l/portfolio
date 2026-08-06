@@ -121,32 +121,32 @@ export default function Hero() {
         <div className="lg:col-span-5 flex justify-center items-center">
           {/* Outer floating wrapper with gentle floating animation */}
           <motion.div
-            animate={{ y: [0, -10, 0] }}
+            animate={{ y: [0, -6, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
             className="relative group flex items-center justify-center p-1"
           >
             {/* Soft Ambient Glow Behind Photo */}
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-cyan-500/25 via-purple-500/25 to-blue-500/25 blur-xl group-hover:blur-2xl opacity-75 group-hover:opacity-100 transition-all duration-500 pointer-events-none" />
+            <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-cyan-500/25 via-purple-500/25 to-blue-500/25 blur-lg group-hover:blur-xl opacity-75 group-hover:opacity-100 transition-all duration-500 pointer-events-none" />
 
             {/* Rotating Glowing Gradient Ring (Cyan -> Purple -> Blue) */}
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
-              className="absolute -inset-1.5 rounded-full bg-[conic-gradient(from_0deg,#00F0FF,#9B75FF,#5DD0FF,#00F0FF)] opacity-85 group-hover:opacity-100 blur-[2px] transition-opacity duration-300 pointer-events-none"
+              transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
+             className="absolute inset-[1px] rounded-full bg-[conic-gradient(from_0deg,#00F0FF,#9B75FF,#5DD0FF,#00F0FF)] opacity-60 blur-[0.5px] transition-opacity duration-300 pointer-events-none"
             />
 
             {/* Glassmorphism Outer Card */}
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
-              className="relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 p-2 rounded-full bg-slate-950/70 backdrop-blur-xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group-hover:border-cyan-400/50 group-hover:shadow-[0_0_40px_rgba(0,240,255,0.3)] transition-all duration-300"
+              className="relative w-52 h-52 sm:w-64 sm:h-64 lg:w-72 lg:h-72 p-px rounded-full bg-slate-950/70 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] group-hover:border-cyan-400/50 group-hover:shadow-[0_0_28px_rgba(0,240,255,0.22)] transition-all duration-300"
             >
               {/* Profile Image */}
               <img
                 src="/profile.jpg"
                 alt="Hemanth B - AI & Data Science Engineer"
                 loading="lazy"
-                className="w-full h-full object-cover rounded-full shadow-inner transition-transform duration-500 group-hover:scale-[1.03]"
+                className="w-full h-full object-cover rounded-full shadow-inner transition-transform duration-500 group-hover:scale-[1.01]"
               />
             </motion.div>
           </motion.div>
