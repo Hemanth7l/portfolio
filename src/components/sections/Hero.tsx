@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { TypeAnimation } from "react-type-animation";
 import { Github, Linkedin, Mail, ArrowUpRight, FileText, Send } from 'lucide-react';
 import { portfolioData } from '@/data/portfolioData';
 
@@ -54,12 +55,26 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle / Role Tag */}
-          <div className="text-cyan-400 font-mono text-base sm:text-xl lg:text-2xl font-medium tracking-wide flex items-center justify-center lg:justify-start gap-2 flex-wrap">
-            <span>AI & Data Science Student</span>
-            <span className="text-purple-400 font-bold mx-1">|</span>
-            <span>Data Analytics Intern</span>
-            <span className="inline-block w-0.5 h-6 bg-cyan-400 animate-pulse ml-0.5" />
-          </div>
+          <div className="flex justify-center lg:justify-start w-full">
+  <TypeAnimation
+    sequence={[
+      "AI & Data Science Student",
+      2000,
+      "Data Analytics Intern",
+      2000,
+      "Aspiring AI Engineer",
+      2000,
+      "Python Developer",
+      2000,
+      "Machine Learning Enthusiast",
+      2000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+    className="text-cyan-400 font-mono text-base sm:text-xl lg:text-2xl font-medium tracking-wide"
+  />
+</div>
 
           {/* Bio Description */}
           <p className="max-w-2xl text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed font-normal">
